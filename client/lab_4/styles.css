@@ -84,11 +84,6 @@
       display: block;
   }
 
-  .carousel .carousel-actions {
-      display: flex;
-      justify-content: space-between;
-  }
-  
   .groupproject,
   .github {
     color: #5995DA;
