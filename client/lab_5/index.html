@@ -3,25 +3,31 @@
     
     <head>
         <meta charset='UTF-8'/>
-        <title>Joey diFrancesco Lab 5</title>
+        <title>Joey diFrancesco Lab 5: HTML Forms</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
         <link rel="stylesheet" href="styles.css"/>
     </head>
 
     <body>
+        <div class='boxtitle'>Joey diFrancesco Lab 5: HTML Forms</div>
 
-        <div class='column'>
+        <div class='columns'>
+            <div class='column'>
             <div class='box' style="width:300px;">
                 <div class='form-row'>
                     <form action='/api' method='get' class='body'>
                     <label for='first-name'><b>First Name</b></label>
+                    <div class='control'>
                     <input id='first-name' name='first-name' type='text'/>
+                    </div>
                 </div>
 
                 <div class='form-row'>
                     <form action='/api'>
                     <label for='food-preference'><b>Food Preference</b></label>
+                    <div class='control'>
                     <input id='food-preference' name='food-preference' type='text'/>
+                    </div>
                 </div>
 
                 <fieldset class='legacy-form-row'>
@@ -50,6 +56,7 @@
                 <div class='box' style='width: 600px;'>
                 This will be something in two weeks.
                 </div>
+            </div>
             </div>
         </div>
     </body>

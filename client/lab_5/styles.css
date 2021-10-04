@@ -18,6 +18,10 @@ body {
 }
 
 /* Page Layout */
+.boxtitle {
+  background-color: darkkhaki;
+}
+
 .columns {
   display: flex;
   flex-wrap: wrap;
