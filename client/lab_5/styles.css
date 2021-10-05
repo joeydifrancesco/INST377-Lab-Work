@@ -18,7 +18,7 @@ body {
 }
 
 /* Page Layout */
-.boxtitle {
+.box title {
   background-color: darkkhaki;
 }
 
@@ -27,6 +27,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  column-gap: 40px;
 }
 
 .wrapper {
