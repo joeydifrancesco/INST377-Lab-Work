@@ -18,9 +18,6 @@ body {
 }
 
 /* Page Layout */
-.boxtitle {
-  background-color: darkkhaki;
-}
 
 .columns {
   display: flex;
@@ -28,6 +25,10 @@ body {
   align-items: center;
   justify-content: center;
   column-gap: 40px;
+}
+
+.box {
+  background-color: lightgreen;
 }
 
 .wrapper {
