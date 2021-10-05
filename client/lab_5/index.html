@@ -12,33 +12,39 @@
         <div class='wrapper'>
             <div class='container'>
                 <div class='columns'>
-                    <div class='column is-full'><div class='box title'>Joey diFrancesco's Lab 5</div></div>
+                    <div class='column is-full'><div class='box title is-family-sans-serif has-text-weight-normal'>Joey diFrancesco's Lab 5</div></div>
                 </div>
             </div>
         </div>
 
         <div class='columns is-vcentered'>
-            <div class='column'>
-            <div class='box' style="width:300px;">
+            <div class='column mt-5 is-2'>
+            <div class='box' style="width:200px;">
                 <div class='form-row'>
+                    <p class='pb-1'>
                     <form action='/api' method='get' class='body'>
                     <label for='first-name'><b>First Name</b></label>
                     <div class='control'>
                     <input id='first-name' name='first-name' type='text'/>
                     </div>
+                    </p>
                 </div>
 
                 <div class='form-row'>
+                    <p class='mt-2'>
                     <form action='/api'>
                     <label for='food-preference'><b>Food Preference</b></label>
                     <div class='control'>
                     <input id='food-preference' name='food-preference' type='text'/>
                     </div>
+                    </p>
                 </div>
 
                 <fieldset class='legacy-form-row'>
+                    <p class='mt-2'>
                     <form action='/api' method='get' class='body'>
                     <legend><b>Veggie or Vegan?</b></legend>
+                    <p class='mt-2'>
                     <input id='food-type-1'
                             name='food-type'
                             type='radio'
@@ -50,19 +56,22 @@
                             value='No'
                             checked />
                     <label for='food-type-2' class='radio-label'>No</label>
+                    </p>
+                    </p>
                 </fieldset>
 
-                <div class='form-row'>
-                    <form action='/api' method='get' class='body'>
-                    <button>Submit</button>
-                </div>
+                <p class="control">
+                    <p class='mt-2'>
+                    <button class="button is-primary">Submit</button>
+                    </p>
+                </p>
+            </div>
             </div>
 
-            <div class='column'>
-                <div class='box' style='width: 600px;'>
-                This will be something in two weeks.
+            <div class='column is-4'>
+                <div class='box' style='width: 500px;'>
+                This is going to be something in two weeks.
                 </div>
-            </div>
             </div>
         </div>
     </body>
