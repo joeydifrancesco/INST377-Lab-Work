@@ -1,11 +1,12 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-console */
 import express from 'express';
-import labRoutes from './server/labRoutes.js';
-import apiRoutes from './server/routes/apiRoutes.js';
 import reload from 'livereload';
 import connectReload from 'connect-livereload';
 import dotenv from 'dotenv';
 import path from 'path';
+import labRoutes from './server/labRoutes.js';
+import apiRoutes from './server/routes/apiRoutes.js';
 
 dotenv.config();
 const __dirname = path.resolve();
