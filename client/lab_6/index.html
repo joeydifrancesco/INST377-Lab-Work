@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    
+    <meta charset='UTF-8'/>
+    <title>Joey diFrancesco Lab 6</title>
+    <link rel="stylesheet" href="styles.css"/> 
+
+</head>
+
+<body>
+
+    <h2>Joey diFrancesco Lab 6</h2>
+
+    <form class="column is-one-quarter">
+        <input class="input is-info" type="text" placeholder="City or Zipcode">
+        <ul class="suggestions"></ul>
+    </form>
+
+
+    <ul class="results">
+        <li><div class="name">${place.name}</div></li>
+        <div class="category">${place.category}</div>
+        <div class="address">${place.address_line_1}</div>
+        <div class="city">${place.city}</div>
+        <div class="zip">${place.zip}</div>
+        </ul>
+        <br>
+    <script src='script.js'></script>
+
+</body>
+
+</html>
