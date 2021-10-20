@@ -71,6 +71,17 @@
     margin-bottom: 15px;
     margin-top: 5px;
   }
+
+  .section_1 .text {
+    display: block;
+    border: 0;
+  }
+
+  .section_1 .left ul {
+    list-style: circle;
+    margin:0;
+    padding:0;
+  }
   
   .section_2 {
     background-color: skyblue;
