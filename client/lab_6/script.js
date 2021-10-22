@@ -16,15 +16,16 @@ function findMatches(wordToMatch, cities) {
 }
 
 function displayMatches () {
-    const matchArray = findMatches(this.value, cities)
+    const matchArray = findMatches(event.target.value, cities)
     const html = matchArray.map(place => {
         return `
             <li>
-                <span class="name">${place.name}</span>
-                <span class="address">${place.address_line_1}</span>
-                <span class="city">${place.city}</span>
-                <span class="zip">${place.zip}</span>
+                <span class="name">${place.name}</span></br>
+                <span class="address">${place.address_line_1}</span></br>
+                <span class="city">${place.city}</span></br>
+                <span class="zip">${place.zip}</span></br>
             </li>
+            <br>
         `;
     }).join('');
     suggestions.innerHTML = html;
@@ -34,7 +35,14 @@ const searchInput = document.querySelector('.search')
 const suggestions = document.querySelector('.suggestions')
 
 searchInput.addEventListener('change', displayMatches)
-searchInput.addEventListener('keyup', (evt) => { displayMatches(evt);})
+searchInput.addEventListener('keyup', () => { 
+    if (searchInput.value == '') {
+        suggestions.innerHTML = '';
+    } else {
+        displayMatches()
+    }
+
+});
 
 }
 
