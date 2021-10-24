@@ -83,6 +83,12 @@
       height: 40px;
   }
 
+  .photo-grid-container .carousel_actions button:focus {
+    background-color: orange;
+    border: solid;
+    border-color: gray;
+  }
+
   .carousel {
     justify-content: center;
   }
